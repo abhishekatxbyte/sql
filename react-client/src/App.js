@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
 import AddTutorial from "./components/add-tutorial.component";
 import Tutorial from "./components/tutorial.component";
 import TutorialsList from "./components/tutorials-list.component";
@@ -31,10 +30,10 @@ class App extends Component {
 
         <div className="container mt-3">
           <Routes>
-            <Route path="/" element={<TutorialsList/>} />
-            <Route path="/tutorials" element={<TutorialsList/>} />
-            <Route path="/add" element={<AddTutorial/>} />
-            <Route path="/tutorials/:id" element={<Tutorial/>} />
+            <Route path="/" element={<TutorialsList />} />
+            <Route path="/tutorials" element={<TutorialsList />} />
+            <Route path="/add" element={<AddTutorial />} />
+            <Route path="/tutorials/:id" element={<Tutorial />} />
           </Routes>
         </div>
       </div>
