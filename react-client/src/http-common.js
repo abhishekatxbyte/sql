@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
+  baseURL: 'https://mysql-api.onrender.com/api',
   headers: {
     "Content-type": "application/json"
   }

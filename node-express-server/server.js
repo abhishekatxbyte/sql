@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "https://sql-frontend-react.netlify.app/"
 };
 
 app.use(cors(corsOptions));
