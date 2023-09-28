@@ -5,8 +5,9 @@ require('dotenv').config();
 const app = express();
 
 var corsOptions = {
-  origin: "https://sql-frontend-react.netlify.app/"
+  origin: "https://sql-frontend-react.netlify.app",
 };
+
 
 app.use(cors(corsOptions));
 
@@ -26,12 +27,6 @@ db.sequelize.sync()
     console.log("Failed to sync db: " + err.message);
   });
 
-// // drop the table if it already exists
-// db.sequelize.sync({ force: true }).then(() => {
-//   console.log("Drop and re-sync db.");
-// });
-
-// simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
 });
